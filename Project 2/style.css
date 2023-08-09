@@ -1,0 +1,222 @@
+html{
+    /* height:100%;
+ */ 
+ /* removing height means the height or background color applies acc to the length to which the content goes  */
+ background-image:linear-gradient(#FC5E55,#FA4083);
+}
+
+body{
+   background-image:url(images/image-lion-background.png);
+   /* background-position:top center; */
+   background-repeat: no repeat;
+   font-family:font-family: 'Roboto', sans-serif;
+   color:white;
+   font-size:1.125rem; 
+}
+
+
+.container {
+    width:1024px;
+    min-height:300px;  
+    /* min height is used because if content is more the height can be increased by using min height  */
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+header{
+    
+    min-height:100px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    /* This align-items aligns the texts center vertically and not horizontally */
+    padding-top:20px;
+    padding-bottom:20px; 
+    border-bottom: 1px solid rgb(168, 153, 153);
+}
+
+main{
+
+    min-height:300px;
+    display:flex;
+    align-items:center;
+    /* It removes all the extra space and moves to the center */
+}
+
+.cards{
+   
+    display:flex;
+    text-align:center;
+    justify-content:space-around;
+    /* This can be used to give spaces between the cards without mentioning margin for each and every card */
+}
+
+/* Flex box is used so that sections go on the same line and not next line  */
+
+.card1{
+    background-image: url(images/image-background-card1.jpg);
+    background-size:cover;
+    min-height:250px;
+    background-position:bottom;
+    /* This will make sure the image fits from bottom and not from top and thus her legs are not cropped  */
+    width:30%;
+}
+
+.card2{
+    background-image: url(images/image-background-card2.jpg);
+    background-size:cover;
+    min-height:250px;
+    background-position:bottom;
+    /* This will make sure the image fits from bottom and not from top and thus her legs are not cropped  */
+    width:30%;
+}
+
+.card3{
+    background-image: url(images/image-background-card3.jpg);
+    background-size:cover;
+    min-height:250px;
+    background-position:bottom;
+    /* This will make sure the image fits from bottom and not from top and thus her legs are not cropped  */
+    width:30%;
+}
+
+.card1, .card2, .card3{
+    padding: 30px 30px 20px 30px;
+    box-sizing:border-box; 
+    /* learn more about box-sizing */
+    border-radius:5px;
+}
+
+.herobox1{
+    /* width:50%; */ 
+    flex:2;
+    padding-right:100px;
+}
+
+.herobox2{
+    /* width:50%; */  
+   flex:1;
+}
+
+h1{
+    font-size: 3.25rem;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:1rem;
+}
+
+h2{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:20px;
+}
+
+.cards p{
+    font-size:0.85rem;
+    line-height:1.2rem;
+    margin-top:10px;
+}
+
+p{
+    line-height:1.75rem;
+    margin-bottom: 0.5rem;
+    padding-left:auto;
+    padding-right:auto;
+    
+}
+
+i{
+    font-size:100px;
+    padding-top:10px;
+}
+
+.cards a {
+    color:white;
+    text-decoration:none;
+}
+
+.cards i{
+    font-size:100px;
+}
+
+.mybutton:hover{
+    background-color:rgb(37, 190, 139);
+    transition-duration:1s;
+}
+
+.mybutton{
+   text-decoration:none;
+   color:#FA4083;
+   background-color:white;
+   padding:11px 25px;
+   border-radius:5px;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.257);
+
+}
+
+a.mybutton{
+    display:inline-block;
+    margin-top:10px;  
+}
+
+ .herobox2 img{
+    border-radius:10px;
+ }
+
+nav a.mybutton{
+    margin-left:30px;
+}
+
+.navbutton{
+    border: 1px solid white;
+    text-decoration:none;
+    padding:11px 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size:1rem;
+    display:inline-block;
+    position:relative;
+}
+
+.testimonials{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-bottom:50px;
+}
+
+.tbox{
+    width: 47%;
+    padding:50px;
+    border: 1px solid white;
+    box-sizing:border-box;
+    margin-top: 50px;
+    text-align:center;
+
+}
+
+.dropdown{
+    display:none;
+    position:absolute;
+    z-index:1;
+    padding-top:20px;
+   
+}
+
+.navbutton:hover .dropdown{
+    display:block;
+}
+
+.dropdown .navbutton {
+    width:120px;
+    text-decoration:none;
+    background-color:#fa408478;
+}
+
+
+.main2{
+
+   min-height:300px;
+   padding-top: 50px;
+}
+
